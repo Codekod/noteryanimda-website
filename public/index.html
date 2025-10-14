@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noter Yanımda - Türkiye'deki Tüm Noterler</title>
+    <meta name="description" content="Türkiye'deki tüm noterlere ulaşın, nöbetçi noterleri bulun, randevu alın. iOS ve Android'de ücretsiz.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #0F1C3B 0%, #1A2B52 50%, #2D4976 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .tagline {
+            font-size: 1.5em;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: white;
+            color: #0F1C3B;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        .btn-ios { background: #000; color: white; }
+        .btn-android { background: #3DDC84; color: #000; }
+        .features {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin: 40px 0;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        .features h2 {
+            text-align: center;
+            color: #0F1C3B;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .feature {
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            background: #f8f9fa;
+            transition: transform 0.2s;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .feature h3 {
+            color: #0F1C3B;
+            margin-bottom: 10px;
+        }
+        footer {
+            background: rgba(0,0,0,0.2);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: auto;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        footer a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 50px 0;
+        }
+        .stat {
+            text-align: center;
+            color: white;
+        }
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #FFD700;
+        }
+        .stat-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 Noter Yanımda</h1>
+            <p class="tagline">Türkiye'deki Tüm Noterlere Tek Tıkla Ulaşın</p>
+            
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">2300+</div>
+                    <div class="stat-label">Noter</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">81</div>
+                    <div class="stat-label">İl</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">%100</div>
+                    <div class="stat-label">Ücretsiz</div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a href="#" class="btn btn-ios">
+                    🍎 App Store'dan İndir
+                </a>
+                <a href="#" class="btn btn-android">
+                    🤖 Google Play'den İndir
+                </a>
+            </div>
+        </header>
+
+        <div class="features">
+            <h2>Özellikler</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">📍</div>
+                    <h3>Yakındaki Noterler</h3>
+                    <p>GPS ile konumunuza en yakın noterleri anında bulun</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🕐</div>
+                    <h3>Nöbetçi Noter</h3>
+                    <p>Hafta sonu nöbetçi noterleri kolayca öğrenin</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📞</div>
+                    <h3>Direkt İletişim</h3>
+                    <p>Tek tıkla arama yapın veya yol tarifi alın</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📅</div>
+                    <h3>Randevu Sistemi</h3>
+                    <p>Üye noterlerden kolayca randevu alın</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📄</div>
+                    <h3>İşlem Rehberi</h3>
+                    <p>Tüm noterlik işlemleri hakkında detaylı bilgi</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Favoriler</h3>
+                    <p>Sık kullandığınız noterleri kaydedin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Noter Yanımda. Tüm hakları saklıdır.</p>
+        <div style="margin-top: 20px;">
+            <a href="/privacy-policy.html">Gizlilik Politikası</a>
+            <a href="/support.html">Destek</a>
+            <a href="mailto:destek@noteryanimda.com">İletişim</a>
+        </div>
+    </footer>
+</body>
+</html>
